@@ -3,16 +3,18 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 export const Destaque = () => {
   return (
     <View style={styles.conteiner}>
-      <TouchableOpacity style={styles.bnt}>
-        <Text style={styles.text}>➕</Text>
-      </TouchableOpacity>
-      <Text style={styles.text}>Destaque</Text>
+      <View>
+        <TouchableOpacity style={styles.bnt}>
+          <Text style={styles.text}>➕</Text>
+        </TouchableOpacity>
+        <Text style={styles.text}>Destaque</Text>
+      </View>
+   
     </View>
   );
 };
 const styles = StyleSheet.create({
   bnt: {
-   
     width: 60,
     height: 60,
     borderRadius: 100,
@@ -25,10 +27,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   conteiner: {
-    width: 100,
-    backgroundColor: "",
-    justifyContent: "center",
-    alignContent: "center",
+    flexDirection: "row",
+    marginLeft:20,
     alignItems: "center",
   },
 });

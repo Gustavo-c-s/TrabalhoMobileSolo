@@ -29,6 +29,14 @@ export const Postagem = () => {
       id: "5",
       uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89e_xxlYSyafw7ePbJLPnl0f5WuQi1YtTbQ&s",
     },
+    {
+      id: "6",
+      uri: "https://www.razorsom.com.br/wp-content/uploads/2018/10/viajar-de-carro.jpg",
+    },
+    {
+      id: "7",
+      uri: "https://cdn6.campograndenews.com.br/uploads/noticias/2022/08/19/3aa2eceee2a10df6c33daef6f15aa49cf5035fcf.jpeg",
+    },
   ];
 
   return (

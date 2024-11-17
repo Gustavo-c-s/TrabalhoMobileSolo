@@ -40,7 +40,7 @@ export const Perfil = () => {
         </TouchableOpacity>
       </View>
       <Destaque></Destaque>
-      <Publicacao></Publicacao>
+      
     </>
   );
 };

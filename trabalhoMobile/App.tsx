@@ -1,29 +1,38 @@
-import { StatusBar } from "expo-status-bar";
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import { ImageBackground, StyleSheet, View } from "react-native";
 import { Perfil } from "./src/components/Perfil";
 import { Cabeca } from "./src/components/Cabeca";
 import { Pe } from "./src/components/Pe";
+import { Publicacao } from "./src/components/Publicacao";
 
 export default function App() {
   return (
-    <ImageBackground
-      source={require("./assets/insta.jpeg")}
-      style={styles.background}
-    >
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <View style={styles.cabeça}>
         <Cabeca></Cabeca>
-        <Perfil></Perfil>
-        <Pe></Pe>
       </View>
-    </ImageBackground>
+      <View style={styles.perfil}>
+        <Perfil></Perfil>
+      </View>
+      <View style={styles.publicacao}>
+        <Publicacao></Publicacao>
+      </View>
+      <View style={styles.pe}>
+        <Pe></Pe>
+      </View >
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex:1,
     width: "100%",
     justifyContent: "center",
     backgroundColor: "#ffffff",
   },
-  background: { flex: 1, resizeMode: "cover" }, // ou 'contain' },
+  publicacao:{
+    flex:1
+  },
+  
+
 });
